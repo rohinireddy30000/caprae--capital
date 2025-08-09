@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Building2, 
   User, 
   MapPin, 
   DollarSign, 
@@ -12,10 +11,8 @@ import {
   Star,
   MessageCircle,
   Eye,
-  Filter,
   Search,
   Briefcase,
-  Target,
   Shield,
   Plus,
   BarChart3,

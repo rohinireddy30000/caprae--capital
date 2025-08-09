@@ -18,7 +18,6 @@ import {
   Calendar,
   Users,
   Target,
-  Zap,
   Bot,
   Shield,
   Star,

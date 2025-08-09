@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { 
   User, 
   Building2, 
   MapPin, 
-  Mail, 
-  Phone, 
   Edit, 
   Save, 
   X,
   Star,
-  TrendingUp,
-  Calendar,
   CheckCircle,
   Shield,
-  BarChart3,
   MessageCircle,
   Eye
 } from 'lucide-react';
