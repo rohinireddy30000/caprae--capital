@@ -1,17 +1,9 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { 
   Settings as SettingsIcon, 
   Bell, 
   Shield, 
   User, 
-  Lock, 
-  Globe,
-  Mail,
-  Smartphone,
-  ToggleLeft,
-  ToggleRight,
-  ChevronRight,
   Download,
   Upload,
   Trash2,
