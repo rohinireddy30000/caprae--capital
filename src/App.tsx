@@ -25,33 +25,64 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/onboarding" element={<Onboarding />} />
           <Route 
-            path="/dashboard/*" 
+            path="/dashboard/buyer" 
             element={
               isAuthenticated ? (
                 <>
                   <Navigation userType={userType} />
-                  <Routes>
-                    <Route 
-                      path="buyer" 
-                      element={<BuyerDashboard />} 
-                    />
-                    <Route 
-                      path="seller" 
-                      element={<SellerDashboard />} 
-                    />
-                    <Route 
-                      path="profile" 
-                      element={<Profile />} 
-                    />
-                    <Route 
-                      path="settings" 
-                      element={<Settings />} 
-                    />
-                    <Route 
-                      path="deals/:dealId" 
-                      element={<DealRoom />} 
-                    />
-                  </Routes>
+                  <BuyerDashboard />
+                </>
+              ) : (
+                <Navigate to="/" replace />
+              )
+            } 
+          />
+          <Route 
+            path="/dashboard/seller" 
+            element={
+              isAuthenticated ? (
+                <>
+                  <Navigation userType={userType} />
+                  <SellerDashboard />
+                </>
+              ) : (
+                <Navigate to="/" replace />
+              )
+            } 
+          />
+          <Route 
+            path="/dashboard/profile" 
+            element={
+              isAuthenticated ? (
+                <>
+                  <Navigation userType={userType} />
+                  <Profile />
+                </>
+              ) : (
+                <Navigate to="/" replace />
+              )
+            } 
+          />
+          <Route 
+            path="/dashboard/settings" 
+            element={
+              isAuthenticated ? (
+                <>
+                  <Navigation userType={userType} />
+                  <Settings />
+                </>
+              ) : (
+                <Navigate to="/" replace />
+              )
+            } 
+          />
+          <Route 
+            path="/dashboard/deals/:dealId" 
+            element={
+              isAuthenticated ? (
+                <>
+                  <Navigation userType={userType} />
+                  <DealRoom />
                 </>
               ) : (
                 <Navigate to="/" replace />

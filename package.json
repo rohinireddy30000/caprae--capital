@@ -4,6 +4,10 @@
   "description": "Digital platform connecting business buyers and sellers",
   "private": true,
   "homepage": ".",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
   "dependencies": {
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
