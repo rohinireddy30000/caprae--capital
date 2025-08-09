@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Digital platform connecting business buyers and sellers",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
@@ -24,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
